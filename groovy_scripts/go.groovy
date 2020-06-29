@@ -14,7 +14,7 @@ pipeline {
                             sh "echo '${password}' | sudo -S docker stop ozornin_alex_ng"
                             sh "echo '${password}' | sudo -S docker container rm ozornin_alex_ng"
                         } catch (Exception e) {
-                            empty'
+                            print 'empty'
                         }
                     }
                 }
